@@ -1,6 +1,7 @@
 # import module
 from playsound import playsound
 import time
+import os
 
 CLEAR = "\033[2J" # clearing the terminal screen
 CLEAR_AND_RETURN = "\033[H"
@@ -20,7 +21,7 @@ def alarm(seconds):
 
         print(f"{CLEAR_AND_RETURN}Alarm will sound in: {minutes_left:02d}:{seconds_left:02d}")
 
-    playsound("rolex bgm.mp3")
+    playsound("/home/dckapl108/Desktop/Files/python/projects/Alarm Clock/AlarmSounds/mixkit-facility-alarm-sound-999.wav")
 
 minutes = int(input("How many Minutes to wait: "))
 seconds = int(input("How many Seconds to wait: "))
